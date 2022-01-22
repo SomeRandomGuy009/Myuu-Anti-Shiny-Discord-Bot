@@ -14,7 +14,8 @@ Since, I was legit fed up of NebbyBot's lag (not criticising it), I decided to m
 
 # Any upcoming features?
 - Look at multiple channels.
-- Anti- Starter killing
+- Anti - Starter killing
+- Logging with embed instead of text.
 
 # If anyone got any issues, raise it here. If you wanna discuss about some features, my discord id: SomeRandomGuy#1337
 
