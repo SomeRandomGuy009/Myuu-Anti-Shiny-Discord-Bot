@@ -8,6 +8,10 @@ Since, I was legit fed up of NebbyBot's lag (not criticising it), I decided to m
 2. Clone or download the repo. (unzip if downloaded)
 3. Do cd Myuu-Anti-Shiny-Discord-Bot and then pip install -r requirements.txt
 
+# Current Features:
+1. Locks channel if a shiny or greninja-ash is found (30s locktime)
+2. Can only lock one channel at the moment.
+
 # Any upcoming features?
 - Look at multiple channels.
 - Anti- Starter killing
