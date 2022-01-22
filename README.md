@@ -9,16 +9,18 @@ Since, I was legit fed up of NebbyBot's lag (not criticising it), I decided to m
 3. Do cd Myuu-Anti-Shiny-Discord-Bot and then pip install -r requirements.txt
 
 # Current Features:
-1. Locks channel if a shiny or greninja-ash is found (30s locktime)
+1. Locks channel for everyone if a shiny or greninja-ash is found (30s locktime)
 2. Can only lock one channel at the moment.
 
 # Any upcoming features?
 - Look at multiple channels.
 - Anti - Starter killing
 - Logging with embed instead of text.
+- Lock channel for a particular role instead of everyone.
+- Lock channels for Admins as well.
 
 # If anyone got any issues, raise it here. If you wanna discuss about some features, my discord id: SomeRandomGuy#1337
 
 # Submit a PR if u want any other feature to be added. I'll take a look at it and merge.
 
-# Note: I just used the idea of Nebby Bot, didn't copy it. NebbyBot is most probably written in discord.js, while this is written in python. 
+# Note: I just used the idea of Nebby Bot, didn't copy it. NebbyBot is most probably written in discord.js, while this is written in python.
