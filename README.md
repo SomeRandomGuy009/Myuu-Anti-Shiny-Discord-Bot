@@ -26,6 +26,7 @@ In repl.it:
 2. Can only lock one channel at the moment.
 
 # Any upcoming features?
+- Universal logger (I'll get a log of every shiny/ash encountered)
 - Look at multiple channels.
 - Anti - Starter killing
 - Logging with embed instead of text.
