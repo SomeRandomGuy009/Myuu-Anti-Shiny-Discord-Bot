@@ -1,5 +1,8 @@
 # Myuu-Anti-Shiny-Discord-Bot
 
+# What is this used for?
+If you play Myuu bot, this is really useful for you but maybe harms the market. Currently it prevents these from getting killed: Shiny Pokémon and Greninja-Ash. This helps you not accidently kill any rare Pokémon you've been hunting for a while. (Thanks to NebbyBot's top.gg description)
+
 # Why I made it?
 Since, I was legit fed up of NebbyBot's lag (not criticising it), I decided to make my own but in python and host it in replit. It took me around 2hrs at max. 
 
