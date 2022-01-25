@@ -40,3 +40,4 @@ In repl.it:
 # Submit a PR if u want any other feature to be added. I'll take a look at it and merge.
 
 # Note: I just used the idea of Nebby Bot, didn't copy it. NebbyBot is most probably written in discord.js, while this is written in python.
+# 2nd Note: I don't encourage macro/autotyper usage.
