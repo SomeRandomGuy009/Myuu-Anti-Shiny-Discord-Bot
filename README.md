@@ -41,3 +41,4 @@ In repl.it:
 
 # Note: I just used the idea of Nebby Bot, didn't copy it. NebbyBot is most probably written in discord.js, while this is written in python.
 # 2nd Note: I don't encourage macro/autotyper usage.
+# 3rd Note: If you are facing difficulty in hosting this bot, I would advise to use NebbyBot instead. (I don't own it btw)
