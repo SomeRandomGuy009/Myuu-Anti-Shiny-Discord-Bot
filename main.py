@@ -17,27 +17,29 @@ async def on_ready():
 
 @bot.command()
 async def route(ctx):
-    channel = bot.get_channel(channelid) # bot fetches the hunting channel 
-    if ctx.channel.id == channelid: # bot checks the channel id
+    channel = bot.get_channel(channelid) # bot fetches the hunting channel (change it to routing channel)
+    if ctx.channel.id == channelid: # bot checks the channel id (change it to routing channel)
             poke = await bot.wait_for('message', check = lambda m: m.author.id == 438057969251254293 and m.channel == ctx.channel, timeout=5)
             if "Lv36 Greninja-Ash" in description(poke):
-                    channel1 = bot.get_channel(logchannel) # hunting log
-                    await channel1.send("Greninja-Ash has been found.")
+                    channel1 = bot.get_channel(logchannel) # hunting log channel (change it)
                     overwrite = ctx.channel.overwrites_for(ctx.guild.default_role)
                     overwrite.send_messages = False
                     await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
-                    await ctx.send('Channel locked because Greninja-Ash was found.')
+                    msg = await channel.fetch_message(channel.last_message_id)
+                    await channel1.send(embed=msg.embeds[0])
+                    await ctx.send('Channel locked because Greninja-Ash was found.') 
                     time.sleep(30) # need to try with asyncio
                     await ctx.send('Channel Unlocked.')
                     await channel.set_permissions(ctx.guild.default_role, send_messages=True)
 
             if "★" in description(poke):
-                    channel1 = bot.get_channel(logchannel) # hunting log
-                    await channel1.send("A Shiny has been found.")
+                    channel1 = bot.get_channel(logchannel) # hunting log channel (change it)
                     overwrite = ctx.channel.overwrites_for(ctx.guild.default_role)
                     overwrite.send_messages = False
                     await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
-                    await ctx.send('Channel locked because Shiny was found.') 
+                    msg = await channel.fetch_message(channel.last_message_id)
+                    await channel1.send(embed=msg.embeds[0])
+                    await ctx.send('Channel locked because Shiny was found.')
                     time.sleep(30) # need to try asyncio
                     await ctx.send('Channel Unlocked.')
                     await channel.set_permissions(ctx.guild.default_role, send_messages=True)                     
