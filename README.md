@@ -27,11 +27,11 @@ In repl.it:
 # Current Features:
 1. Locks channel for everyone if a shiny or greninja-ash is found (30s locktime)
 2. Can only lock one channel at the moment.
+3. Logging with the help of embed
 
 # Any upcoming features?
 - Look at multiple channels.
 - Anti - Starter killing
-- Logging with embed instead of text.
 - Lock channel for a particular role instead of everyone.
 - Lock channels for Admins as well.
 
