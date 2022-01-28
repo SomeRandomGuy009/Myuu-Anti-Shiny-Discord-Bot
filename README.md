@@ -30,6 +30,7 @@ In repl.it:
 3. Logging with the help of embed
 
 # Any upcoming features?
+- Add a config.json file so that it becomes easier to put the channel ids
 - Look at multiple channels.
 - Anti - Starter killing
 - Lock channel for a particular role instead of everyone.
