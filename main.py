@@ -1,5 +1,6 @@
 import discord, time, os, datetime
 from discord.ext import commands
+from utils.parser import conf
 from keep_alive import keep_alive
 start_time = time.time()  
 bot = commands.Bot(command_prefix='.')
@@ -17,32 +18,45 @@ async def on_ready():
 
 @bot.command()
 async def route(ctx):
-    channel = bot.get_channel(channelid) # bot fetches the hunting channel (change it to routing channel)
-    if ctx.channel.id == channelid: # bot checks the channel id (change it to routing channel)
+    channel = bot.get_channel(conf.routingchannel) 
+    if ctx.channel.id == conf.routingchannel:
             poke = await bot.wait_for('message', check = lambda m: m.author.id == 438057969251254293 and m.channel == ctx.channel, timeout=5)
-            if "Lv36 Greninja-Ash" in description(poke):
-                    channel1 = bot.get_channel(logchannel) # hunting log channel (change it)
+            if poke.embeds != []:
+               if "Lv36 Greninja-Ash" in description(poke):
+                    channel1 = bot.get_channel(conf.loggingchannel)
                     overwrite = ctx.channel.overwrites_for(ctx.guild.default_role)
                     overwrite.send_messages = False
                     await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
                     msg = await channel.fetch_message(channel.last_message_id)
                     await channel1.send(embed=msg.embeds[0])
-                    await ctx.send('Channel locked because Greninja-Ash was found.') 
-                    time.sleep(30) # need to try with asyncio
+                    await ctx.send('Channel locked because Greninja-Ash was found.')  
+                    time.sleep(30)
                     await ctx.send('Channel Unlocked.')
                     await channel.set_permissions(ctx.guild.default_role, send_messages=True)
 
             if "★" in description(poke):
-                    channel1 = bot.get_channel(logchannel) # hunting log channel (change it)
+                    channel1 = bot.get_channel(conf.loggingchannel)
                     overwrite = ctx.channel.overwrites_for(ctx.guild.default_role)
                     overwrite.send_messages = False
                     await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
                     msg = await channel.fetch_message(channel.last_message_id)
                     await channel1.send(embed=msg.embeds[0])
-                    await ctx.send('Channel locked because Shiny was found.')
-                    time.sleep(30) # need to try asyncio
+                    await ctx.send('Channel locked because Shiny was found.') 
+                    time.sleep(30)
                     await ctx.send('Channel Unlocked.')
-                    await channel.set_permissions(ctx.guild.default_role, send_messages=True)                     
+                    await channel.set_permissions(ctx.guild.default_role, send_messages=True)   
+
+            if f"{conf.custompoke}" in description(poke):
+                    channel1 = bot.get_channel(conf.loggingchannel)
+                    overwrite = ctx.channel.overwrites_for(ctx.guild.default_role)
+                    overwrite.send_messages = False
+                    await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
+                    msg = await channel.fetch_message(channel.last_message_id)
+                    await channel1.send(embed=msg.embeds[0])
+                    await ctx.send('Channel locked because Shiny was found.') 
+                    time.sleep(30)
+                    await ctx.send('Channel Unlocked.')
+                    await channel.set_permissions(ctx.guild.default_role, send_messages=True)                  
  
 @bot.command()
 async def ping(ctx):
