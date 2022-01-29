@@ -53,7 +53,7 @@ async def route(ctx):
                     await ctx.channel.set_permissions(ctx.guild.default_role, overwrite=overwrite)
                     msg = await channel.fetch_message(channel.last_message_id)
                     await channel1.send(embed=msg.embeds[0])
-                    await ctx.send('Channel locked because Shiny was found.') 
+                    await ctx.send(f'Channel locked because a {conf.custompoke} was found.') 
                     time.sleep(30)
                     await ctx.send('Channel Unlocked.')
                     await channel.set_permissions(ctx.guild.default_role, send_messages=True)                  
