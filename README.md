@@ -14,13 +14,13 @@ Locally:
 3. Do cd Myuu-Anti-Shiny-Discord-Bot and then pip install -r requirements.txt
 4. Remove the keep_alive.py file and the lines about keep_alive from main.py.
 5. Create .env file and put your bot token in it: TOKEN=xxxxxx
-6. Put the required channel ids in main.py and run this file.
+6. Put the required channel ids and custom poke(don't keep it empty, if no custom poke then put None inside double quotes) in config.json file and run this file.
 
 In repl.it:
 1. Create a repl, clone this file or import it from github.
 2. Install the requirements.txt file.
 3. Go to secrets tab, create a secret with the name of TOKEN and put the Bot's token in the field.
-4. Put the required channel ids in main.py file.
+4. Put the required channel ids and custom poke(don't keep it empty, if no custom poke then put None inside double quotes) in config.json file.
 5. Click on Run button.
 6. After the keep_alive server starts, use uptimerobot to keep it online for almost 24/7.
 
