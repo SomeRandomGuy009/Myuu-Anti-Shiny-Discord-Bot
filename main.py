@@ -1,7 +1,7 @@
 import discord, time, os, datetime
 from discord.ext import commands
 from utils.parser import conf
-from keep_alive import keep_alive
+
 start_time = time.time()  
 bot = commands.Bot(command_prefix='.')
      
@@ -81,5 +81,5 @@ async def uptime(ctx):
         except discord.HTTPException:
             await ctx.send("Current uptime: " + text)
 
-keep_alive()
+
 bot.run(os.environ["TOKEN"])
