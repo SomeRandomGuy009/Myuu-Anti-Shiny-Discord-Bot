@@ -39,7 +39,6 @@ In repl.it:
 
 # Submit a PR if u want any other feature to be added. I'll take a look at it and merge.
 
-# Note: I just used the idea of Nebby Bot, didn't copy it. NebbyBot is most probably written in discord.js, while this is written in python.
+# Note: I just used the idea of Elite SHiny Savior, didn't copy it. Elite SHiny Savior is most probably written in discord.js, while this is written in python.
 # 2nd Note: I don't encourage macro/autotyper usage.
-# 3rd Note: If you are facing difficulty in hosting this bot, I would advise to use NebbyBot instead. (I don't own it btw)
-# 4th Note(hopefully the last one): Somewhat related to the 3rd one. I can also host this bot for you, for free. (you got to dm me in discord for that, and provide the bot token, and other config stuff. I won't guarantee 24/7 i.e. 100% uptime of this bot, but it's gonna be quite long. It would still look at only 1 channel until i update it.)
+# 3rd Note: If you are facing difficulty in hosting this bot, I would advise to use Elite Shiny Savior instead. 
